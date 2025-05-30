@@ -24,3 +24,33 @@ let strNum = String(someNum);
 
 console.log(strNum);
 console.log(typeof strNum);
+
+// *************** Operators ******************
+
+// console.log(2 + 2);
+// console.log(2 - 9);
+// console.log(2 * 5);
+// console.log(2 ** 5);
+// console.log(2 / 5);
+// console.log(2 % 6);
+
+// let str1 = "Hello ";
+// let str2 = "Swarangi";
+// console.log(str1 + str2);
+
+// console.log("1" + 2);
+// console.log(1 + "2");
+// console.log("1" + 2 + 2);
+// console.log(1 + 2 + "2");
+
+console.log(+true);
+console.log(+"");
+// console.log(true+) -- error
+
+let gameCounter = 100;
+// ++gameCounter;
+// ^ prefixer
+
+// gameCounter++;
+// ^Postfixer
+console.log(gameCounter);
