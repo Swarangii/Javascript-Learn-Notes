@@ -33,3 +33,30 @@ console.log(typeof bigNumber);
 //        Arrays  =>  object
 //        Function  =>  function
 //        Object  =>  object
+
+// ***************************************
+
+// Stack and Heap Memory
+// Stack => Primitive Datatype
+// Heap => Non-Primitive Datatype
+
+let myId = "Swarangi.com";
+let anotherName = myId;
+console.log(anotherName);
+
+anotherName = "fluxuraa";
+
+console.log(myId);
+console.log(anotherName);
+
+let user1 = {
+  email: "abc@gmail.com",
+  upi: "1234",
+};
+
+let user2 = user1;
+
+user2.email = "aaa@gmail.com";
+
+console.log(user1);
+console.log(user2);
