@@ -45,3 +45,42 @@ function loginUserMessage(username = "sam") {
 }
 console.log(loginUserMessage("Swarangi"));
 console.log(loginUserMessage());
+
+// Suppose we don't know number of parameters
+
+// function calculateCartPrice(val1,val2...num1) {
+//   return num1;
+// }
+
+function calculateCartPrice(...num1) {
+  return num1;
+}
+
+console.log(calculateCartPrice(100, 244, 564, 900));
+
+// Accessing object through function --
+const user = {
+  name: "Swarangi",
+  age: 20,
+};
+
+function handleObject(anyObject) {
+  console.log(`Username is ${anyObject.name} and age is ${anyObject.age}.`);
+}
+
+// handleObject(user);
+
+handleObject({
+  name: "Sam",
+  age: 9,
+});
+
+// acess array through function --
+const myNewArray = [200, 700, 300, 540];
+
+function returnSecondValue(getArray) {
+  return getArray[1];
+}
+
+console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([100, 200, 300, 400]));
